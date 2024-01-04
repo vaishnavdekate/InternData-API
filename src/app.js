@@ -1,7 +1,4 @@
 const express = require('express');
-//const mongoose = require('mongoose');
-//const bodyParser = require('body-parser');
-//const cors = require('cors');
 require("../src/db/conn");
 const FormResponse = require("../src/models/response");
 
@@ -41,12 +38,3 @@ app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
 
-
-
-// // Middleware
-// app.use(express.json());
-// app.use(cors());
-// app.use(bodyParser.json());
-
-// // Routes
-// app.use('/api/form-responses', formResponsesRouter);
